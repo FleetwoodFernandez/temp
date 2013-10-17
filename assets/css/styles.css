@@ -1,0 +1,88 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Gotham Narrow A', 'Gotham Narrow B', helvetica, arial, sans-serif;
+	font-weight: 300; 
+	font-style: normal;
+}
+
+.container {
+	padding:0; position:absolute; top:0; bottom:140px; left:0; right:0;
+}
+
+#featureImg {
+	background: url(../img/1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 140px;
+}
+
+#navBar {
+	background-color: #ffffff;
+	height: 110px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding-top: 30px;
+	min-width: 600px;
+}
+
+#logo {
+	display: inline-block;
+	background: url(../img/logo.png) no-repeat;
+	width: 83px;
+	height: 82px;
+	margin-left: 27px;
+}
+
+#contactInfo {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 196px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	margin: 0;
+}
+
+address {
+	font-size: 16px;
+	font-style: normal;
+	line-height: 22px;
+}
+
+h6 {
+	color: #999999;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+a {
+	color: #000;
+}
+
+a:hover,
+a:active {
+	color: #999;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+    #logo{
+        background:url('../img/logo@2x.png') no-repeat top left;
+		background-size: 83px 82px;
+    }
+}
