@@ -86,3 +86,9 @@ a:active {
 		background-size: 83px 82px;
     }
 }
+
+@media only screen and (max-device-width: 480px) {
+	#contactInfo {
+		margin-left: 20px;
+	}
+}
