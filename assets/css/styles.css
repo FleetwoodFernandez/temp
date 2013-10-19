@@ -23,7 +23,10 @@ body {
 }
 
 #featureImg {
+<<<<<<< HEAD
 	background: url(../img/1.jpg) no-repeat center fixed; 
+=======
+>>>>>>> 09ff35e553d69a79f55244837107d603f82a442d
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -31,6 +34,10 @@ body {
 	width: 100%;
 	height: 100%;
 	margin-bottom: 140px;
+	animation: fadein 1s;
+    	-moz-animation: fadein 1s; /* Firefox */
+	-webkit-animation: fadein 1s; /* Safari and Chrome */
+	-o-animation: fadein 1s; /* Opera */
 }
 
 #navBar {
@@ -82,6 +89,39 @@ a {
 a:hover,
 a:active {
 	color: #999;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), 
