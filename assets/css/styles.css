@@ -1,8 +1,8 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 	min-height: 100%;
+	overflow: hidden;
 }
 
 body {
@@ -14,11 +14,16 @@ body {
 }
 
 .container {
-	padding:0; position:absolute; top:0; bottom:140px; left:0; right:0;
+	padding:0;
+	position:fixed;
+	top:0;
+	bottom:140px;
+	left:0;
+	right:0;
 }
 
 #featureImg {
-	background: url(../img/1.jpg) no-repeat center center fixed; 
+	background: url(../img/1.jpg) no-repeat center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -29,7 +34,7 @@ body {
 }
 
 #navBar {
-	background-color: #ffffff;
+	background-color: #fff;
 	height: 110px;
 	width: 100%;
 	position: fixed;
@@ -61,6 +66,7 @@ address {
 	font-size: 16px;
 	font-style: normal;
 	line-height: 22px;
+	font-family: 'Gotham Narrow A', 'Gotham Narrow B', helvetica, arial, sans-serif;
 }
 
 h6 {
@@ -88,8 +94,28 @@ a:active {
 }
 
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .container {
+	    bottom:110px;
+    }
+    
+    #navBar {
+    	padding-top: 20px;
+	    height: 70px;
+	    padding-bottom: 20px;
+    }
+    
+    #logo{
+    	margin-top: 10px;
+        background:url('../img/logo@2x.png') no-repeat top left;
+		background-size: 50px 50px;
+    }
+    
     #contactInfo {
-    	margin-left: 20px;
-    	font-size: 14px;
+    	margin-left: 0px;
+    }
+    
+    address {
+    	font-size: 12px;
     }
 }
