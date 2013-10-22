@@ -11,22 +11,20 @@ body {
 	font-family: 'Gotham Narrow A', 'Gotham Narrow B', helvetica, arial, sans-serif;
 	font-weight: 300; 
 	font-style: normal;
+	font-size: 15px;
 }
 
 .container {
 	padding:0;
 	position:fixed;
 	top:0;
-	bottom:140px;
+	bottom:80px;
 	left:0;
 	right:0;
 }
 
 #featureImg {
-<<<<<<< HEAD
-	background: url(../img/1.jpg) no-repeat center fixed; 
-=======
->>>>>>> 09ff35e553d69a79f55244837107d603f82a442d
+	background: url() no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -42,20 +40,20 @@ body {
 
 #navBar {
 	background-color: #fff;
-	height: 110px;
+	height: 80px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
-	padding-top: 30px;
+	padding-top: 15px;
 	min-width: 600px;
 }
 
 #logo {
 	display: inline-block;
 	background: url(../img/logo.png) no-repeat;
-	width: 83px;
-	height: 82px;
-	margin-left: 27px;
+	width: 60px;
+	height: 60px;
+	margin-left: 25px;
 }
 
 #contactInfo {
@@ -70,9 +68,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 address {
-	font-size: 16px;
+	font-size: 15px;
 	font-style: normal;
-	line-height: 22px;
+	line-height: 20px;
 	font-family: 'Gotham Narrow A', 'Gotham Narrow B', helvetica, arial, sans-serif;
 }
 
@@ -129,20 +127,20 @@ a:active {
 
     #logo{
         background:url('../img/logo@2x.png') no-repeat top left;
-		background-size: 83px 82px;
+		background-size: 60px 60px;
     }
 }
 
-@media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 480px) {
     
     .container {
-	    bottom:110px;
+	    bottom:75px;
     }
     
     #navBar {
-    	padding-top: 20px;
-	    height: 70px;
-	    padding-bottom: 20px;
+    	padding-top: 5px;
+	    height: 60px;
+	    padding-bottom: 10px;
     }
     
     #logo{
@@ -152,7 +150,7 @@ a:active {
     }
     
     #contactInfo {
-    	margin-left: 0px;
+    	margin-left: 15px;
     }
     
     address {
